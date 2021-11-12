@@ -1,0 +1,341 @@
+@import "./variables";
+
+// Hero
+
+.hero {
+    color: white;
+    width: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+
+        &__back {
+        position: absolute;
+        min-height: 100vh;
+        align-items: center;
+        z-index: -2;
+    }
+
+    &__video {
+        width: 100vw;
+    
+    }
+
+    &__txBroom {
+        position: relative;
+        color: #FFF30D;
+        top: 0px;
+        font-size: $letraTituloMuyGrande;
+        font-style: bold;
+        font-weight: bold;
+    }
+
+    &__txWhite {
+        display: inline;
+        position: relative;
+        top: 130px;
+        left: 200px;
+        color: white;
+        font-size: $letraTituloMuyGrande;
+        font-weight: bold;
+    }
+
+    &__parrafo {
+        display: inline;
+        position: relative;
+        top: 150px;
+        left: 200px;
+        color: white;
+        font-size: $letraSubtitulo;
+        font-style: italic;
+        width: 50vw;
+    }
+
+    &__cajaBoton {
+        position: relative;
+        top: 200px;
+        left: 200px;
+        width: 50%;
+        display: flex;
+    }
+
+    &__botonCiudadano {
+        position: relative;
+        display: inline-block;
+        background-color: $colorTree;
+        color: white;
+        height: 70px;
+        width: 250px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: $letraBotonGrande;
+        font-weight: bold;
+        box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    &__botonCiudadano:hover {
+        background-color: white;
+        a{
+            color: $colorTree;
+        }
+    }
+        
+    &__botonEmprendedor {
+        position: relative;
+        display: inline-block;
+        background-color: $colorCalipso;
+        color: white;
+        height: 70px;
+        width: 250px;
+        border-radius: 6px;  
+        margin: auto;
+        text-align: center;
+        font-size: $letraBotonGrande;
+        font-weight: bold;
+        box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+      }
+
+    &__botonEmprendedor:hover {
+        background-color: white;
+        
+        a{
+            color: $colorCalipso;
+        }
+    }
+}
+
+// Tarjetas
+
+.tarjeta {
+
+    background-color: white;
+    height:80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__titulo {
+        display: block;
+        background-color: white;
+        height: auto;
+        
+        h2{
+            font-size: $letraTituloGrande;
+            color: $colorBlue;
+            font-weight: bolder;
+            padding-left: 200px;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+    }
+    
+    &__img {
+        width: 200px;
+    }
+
+    &__cajaDiv {
+        height: 175px;
+        display: flex;
+    
+    align-items: center;
+    }
+
+    &__caja {
+        display: flex;
+        align-items: center;
+        height: 350px;
+        box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+    
+        p {
+            font-size: $letraTitulo;
+            color: $colorBlue;
+            font-weight: bold;
+            text-align: center;
+
+            
+        }
+    }
+}
+a {
+    text-decoration: none;
+}
+
+// Faqs
+
+.faq {
+    height: 80vh;
+    width: 70vw;
+    margin: auto;
+
+    &__titulo {
+        height: 100px;
+        width: 80%;
+        font-weight: bold;
+        margin: auto;
+    }
+
+    &__caja{
+        width: 80%;
+        margin: auto;
+    }
+
+    &__margin {
+        margin-bottom: 20px;
+        border: solid grey 1px;
+        box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+    }
+
+    &__margin0 {
+        margin-bottom: 0%;}
+    
+    strong {
+        font-weight: normal;
+    }
+
+    button {
+        font-size: $letraSubtitulo;
+    }
+
+    h3 {
+        font-size: $letraTitulo;
+        font-weight: bold;
+    }
+}
+
+
+// Contacto
+
+.contacto {
+    height: 20vh;
+    width: 70vw;
+    margin: auto;
+    font-size: $letraSubtitulo;
+    text-align: center;
+
+    p {
+        display: inline;
+    }
+
+    &__btn {
+        background-color: $colorGris;
+        border-radius: 20px;
+        box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+
+        a { 
+        color: black;
+        }
+    }
+    &__btn:hover {
+        background-color: white;
+        color: $colorTree;
+    }
+
+}
+
+// Media Queries hero
+
+@media (max-width: 768px) {
+    .hero__txWhite {
+        font-size: 4rem;
+    top: 100px}
+
+        .hero__txBroom {
+            font-size: 4rem;}
+        
+        .hero__parrafo 
+        {
+            font-size: 1rem;
+            top: 100px
+        }
+        .hero__cajaBoton {
+            top: 120px
+        }
+        
+        .hero__botonCiudadano {
+        height: 50px;
+            width: 140px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1rem;
+            
+        }
+    
+    
+
+.hero__botonEmprendedor {
+    height: 50px;
+            width: 140px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1rem;
+    }
+
+    .tarjeta__titulo h2 {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        text-align: center;
+}
+
+.tarjeta {
+    display: block;
+height: 100%;
+}
+
+    .tarjeta__caja {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+
+.faq {
+height: 100%;
+margin-bottom: 30px;}
+
+
+.faq__titulo {
+    text-align: center;
+}
+}

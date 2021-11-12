@@ -1,0 +1,73 @@
+@import "./variables";
+
+// Menu - Nav
+
+.subMenu {
+ height: 40px;
+ width: 100vw;
+ position: fixed;
+ z-index: 2; 
+ background-color: white; 
+ img {
+     width: 20px;
+     display: inline;
+ }
+ p {
+     display: inline;
+ }
+
+ &__alto {
+    height: 100%;
+    flex-direction: column;
+ }
+ &__division {
+     display: flex;
+     height: 100%;
+     align-content: center;
+    }
+ 
+ &__junto {
+     display: flex;
+ }
+
+}
+
+.menu {
+    position: fixed;
+    width: auto;
+    z-index: 3;
+    margin-right: 20px;
+    padding-top: 40px;
+
+    &__img {
+        width: 150px;
+    }
+     
+    &__alineado {
+        width: 100vw;
+
+        a{
+        padding-left: 100px;
+        }
+    }
+       
+    &__izq {
+        justify-content: flex-end;
+        width: 100%;
+
+        a { 
+            font-weight: bold;
+            color: $colorBlue;
+        }
+
+        img {
+            width: 10px;
+            
+        }    
+    }
+    
+    &__frijol {
+        display: flex;
+        align-items: center;
+    }
+}

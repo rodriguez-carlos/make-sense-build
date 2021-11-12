@@ -17,6 +17,9 @@ margin: auto;
     font-weight: bold;
     text-align: center;
     margin: auto;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
 
 &__img {
@@ -40,7 +43,7 @@ margin: auto;
  }
 
  &__reto {
-     background-color: $colorCategoriaDiseno;
+     background-color: #196C8415;
      border-radius: 30px;
      font-size: $letraSubtitulo;
      height: 100%;
@@ -72,7 +75,7 @@ margin: auto;
 
     .preguntasDiseno {
 padding-top: 20px;
-background-color: $colorCategoriaDiseno;
+background-color: #196C8415;
 border-radius: 30px;
 font-size: $letraNormal;
 height: 100%;

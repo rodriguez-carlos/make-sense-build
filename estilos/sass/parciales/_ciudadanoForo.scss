@@ -1,0 +1,197 @@
+@import "./variables";
+
+
+.blanco {
+    height: 100px;
+    width: 100%;
+}
+
+.hero3 {
+    
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    
+        &__back {
+        position: absolute;
+        min-height: 40vh;
+        align-items: center;
+        width: 100vw;
+              
+        img {
+            height: 400px;
+            width: 100vw;
+            overflow: hidden;
+            }
+        }
+    
+        &__titulo {
+            position: relative;
+            top: -250px;
+            color: $colorAtlantis;
+            font-size: $letraTituloMuyGrande;
+            font-style: bold;
+            font-weight: bold;
+            width: 500px;
+            left: 50px;
+        }
+
+        &__txWhite {
+            position: relative;
+            top: 0;
+            width: 50%;
+            height: 300px;
+            
+            img {
+                height: 500px;
+            }  
+        }
+
+        &__parrafo {
+            position: relative;
+            top: -250px;
+            color: white;
+            font-size: $letraSubtitulo;
+            width: 400px;
+            left: 50px;
+        }
+
+        &__cajaBoton {
+            position: relative;
+            top: 200px;
+            left: 200px;
+            width: 50%;
+            display: flex;
+        }
+       
+        &__btn {
+            position: relative;
+            display: flex;
+            background-color: $colorAtlantis;
+            
+            height: 200px;
+            width: 300px;
+            border-radius: 100px;  
+            margin: auto;
+            text-align: center;
+            font-size: $letraTituloMuyGrande;
+            font-weight: bold;
+            top: -570px;
+            left: 300px;
+            box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 2px 6px 13px -7px rgba(0,0,0,0.75);
+            text-decoration: none;
+        
+                       p {
+                margin: auto;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+
+        &__btn:hover {
+            background-color: white;
+            
+            box-shadow: 2px 6px 13px -7px rgb(193, 233, 78);
+            -webkit-box-shadow: 2px 6px 13px -7px rgb(193, 233, 78);
+            -moz-box-shadow: 2px 6px 13px -7px rgb(193, 233, 78);
+            a {
+            color: $colorAtlantis;
+            }
+        
+        }
+}
+
+// Pasos
+
+.pasos2 {
+
+    background-color: white;
+    height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 150px;
+    margin-top: -200px;
+         
+        &__caja {
+            display: flex;
+            align-items: center;
+            height: 350px;
+            width: 400px;
+            border: none;
+            }
+
+        &__nro {
+            font-size: 6rem;
+            color: $colorCerise;
+            font-weight: bold;
+        }
+
+        &__txt {
+            font-size: $letraTitulo;
+            color: $colorBlue;
+            text-align: center;
+            border-top: solid 1px $colorCerise;
+            padding-top: 20px;
+        }
+}
+
+// Calendario
+
+.calendario {
+
+    height:130vh;
+    
+    &__titulo {
+ 
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: $letraTituloGrande;
+
+        strong {
+            color: palevioletred;
+        }   
+
+    }
+    &__caja {
+        width: 450px;
+        height: 450px;    
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__agenda1 {
+        color: $colorCerise;
+        font-size: $letraSubtitulo; 
+        margin-bottom: 10px;
+    }
+
+    &__agenda2 {
+        color: $colorBrick;
+        font-size: $letraSubtitulo; 
+        margin-bottom: 10px;   
+    }
+
+    &__agenda3 {
+        color: $colorRoman;
+        font-size: $letraSubtitulo;
+        margin-bottom: 100px;
+    }
+}
